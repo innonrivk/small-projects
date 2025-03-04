@@ -1,7 +1,7 @@
 from scapy.all import *
 from scapy.layers.inet import *
 
-MY_MAC =  "E8:DE:27:A9:AA:7A".lower()
+MY_MAC =  "AA:AA:AA:AA:AA".lower()
 
 def filter_mac(frame):
     return  (Ether in frame) and (frame[Ether].dst == MY_MAC)
